@@ -1,0 +1,11 @@
+{
+  "name": "Munin",
+  "author": "Slatyo",
+  "description": "Command framework for Valheim mods. Named after Odin's raven - provides unified console commands, permissions, and chat utilities.",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/Slatyo/Valheim-Munin",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2333",
+    "ValheimModding-Jotunn-2.26.1"
+  ]
+}
