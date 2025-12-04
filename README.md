@@ -189,25 +189,6 @@ if (Permission.IsHost(player)) { }
 if (Permission.HasPermission(player, PermissionLevel.Admin)) { }
 ```
 
-### Announce - Center-Screen Messages
-
-```csharp
-// Show to all players
-Announce.Show("Title", "Subtitle", duration: 3f);
-
-// Show to specific player
-Announce.Show(player, "Title");
-
-// Boss-style announcement (large, dramatic)
-Announce.ShowBoss("The Elder has awakened!");
-
-// Biome discovery style
-Announce.ShowBiome("Black Forest");
-
-// Top-left notification
-Announce.ShowNotification(player, "Quest completed!");
-```
-
 ### ChatColor - Predefined Colors
 
 ```csharp
@@ -278,8 +259,7 @@ public class MyMod : BaseUnityPlugin
                     if (string.IsNullOrEmpty(message))
                         message = "Hello!";
 
-                    Announce.Show(target, message, $"From {args.Player.GetPlayerName()}");
-                    return CommandResult.Success($"Greeted {target.GetPlayerName()}");
+                    return CommandResult.Success($"Greeted {target.GetPlayerName()}: {message}");
                 }
             },
             new CommandConfig
