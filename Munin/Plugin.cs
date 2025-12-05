@@ -15,7 +15,7 @@ namespace Munin
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string PluginGUID = "com.slaty.munin";
+        public const string PluginGUID = "com.slatyo.munin";
         public const string PluginName = "Munin";
         public const string PluginVersion = "1.0.0";
 
